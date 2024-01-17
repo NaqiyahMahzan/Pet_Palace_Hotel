@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+	<link rel="stylesheet" href="Reservation.css">
+	<script src = "Reservation.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+		<h1 class = petPalace>Pet Palace</h1>
+		
+        <form action="/search" method="get">
+            <label for="search"></label>
+            <input type="text" id="search" name="q" placeholder="Enter your search term">
+            <button type="submit">Search</button>
+        </form>
+		<img src="petPalace logo.png" alt="Pet Palace Logo" class="logo">
+		<a class = "Home" href = "petpalace.html" >Home
+		</a>
+    </header>
+
+    <nav class="navbar">
+        <div class="container" id = "ReservationForm">
+		<ul class = "unlist">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="donation.html">Donation</a></li>
+        <li><a href="volunteer.html">Volunteering</a></li>
+		<li><a href="policies.html">Policy</a></li>
+		<li><a href="faqs.html">FAQs</a></li>
+		</ul>
+        </div>
+    </nav>
+	<div class="container form-container">
+    <form>
+        <div>
+		<h1>Reservation Form</h1>
+		<br></br>
+            <label for="Reservation">Reservation</label>
+            <select name="Reservation">
+                <option value="Room">Room</option>
+                <option value="vet">Vet</option>
+                <option value="grooming">Grooming</option>
+                <option value="Adoption">Adoption</option>
+            </select>
+        </div>
+
+        <div>
+		<br></br>
+		<br></br>
+            <label for="petType">Type of Pet</label>
+            <select name="petType">
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="petName">Pet Name</label>
+            <input name="petName" type="text">
+        </div>
+
+        <div>
+            <label for="numOfPet">Number Of Pet</label>
+            <input type="number" name="numOfPet" min="1" max="10">
+        </div>
+
+        <div>
+            <label for="allergic">Allergic (if any)</label>
+            <input type="text" name="allergic">
+        </div>
+
+        <div>
+            <label for="reservationDate">Date</label>
+            <input type="date" id="reservationDate" name="reservationDate">
+        </div>
+
+        <hr>
+
+        <div>
+			<hr></hr>
+            <h3>Pet Owner Information</h3>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
+
+        <div>
+            <label for="HpNo">Phone Number</label>
+            <input type="text" placeholder="013-9828134">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text">
+        </div>
+
+        <button type="button" class = "btn" onclick = "submitForm()">Submit</button>
+    </form>
+</div>
+	<br></br>
+	<footer>
+        <p>Contact us at: info@petPalace.com</p>
+        <p>&copy; 2024 PET PALACE. All rights reserved.</p>
+    </footer>
+</body>
+</html>

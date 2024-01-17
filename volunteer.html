@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Volunteer Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="volunteerstyle.css">
+    <script src="volunteerscript.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <h1 class="petPalace">Pet Palace</h1>
+        
+        <form action="/search" class="formSearch" method="get">
+            <label for="search" class="labelSearch"></label>
+            <input type="text" id="search" name="q" placeholder="Enter your search term">
+            <button type="submit" class="bttn">Search</button>
+        </form>
+        <img src="petPalace logo.jpg" alt="Pet Palace Logo" class="logo">
+		<a href="petpalace.html" class="Home">Home</a>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="unlist">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="volunteer.html">Volunteering</a></li>
+                <li><a href="policies.html">Policy</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="fcontainer">
+        <div class="form-container">
+            <form id="volunteerForm">
+                <h1>Volunteering Form</h1>
+
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" placeholder="Enter your age" name="age" required>
+
+                <label for="ic">NRIC:</label>
+                <input type="text" placeholder="XXXXXX-XX-XXXX" name="ic" required>
+
+                <label for="no">Contact Number:</label>
+                <input type="text" placeholder="XXX-XXXXXXX" name="no" required>
+
+                <label for="nric">Upload your NRIC:</label>
+                <input type="file" id="fileInput" name="nric" accept="image/*">
+
+                <label for="reason">State why you want to become a volunteer:</label>
+                <input type="text" placeholder="Enter your reason" name="reason" required>
+
+                <button type="button" class="btn" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+
+        <div class="image-caption-container">
+            <img class="form-image" src="volunteer.jpeg" alt="Form Image">
+            <p class="image-caption">"Unlock the joy of volunteering at our pet hotel and
+                become a cherished part of creating a loving haven for our furry guests."</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us at: info@petPalace.com</p>
+        <p>&copy; 2024 PET PALACE. All rights reserved.</p>
+    </footer>
+</body>
+</html>

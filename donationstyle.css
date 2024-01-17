@@ -1,0 +1,149 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+	background-color: pink;
+    }
+
+.petPalace {
+	font-size: 24px;
+    margin: 0;
+	position: absolute; 
+	left: 80px;        
+	top: 5%;          
+	transform: translateY(-50%); 
+    }
+		
+.Home {
+	font-size: 24px;
+    margin: 0;
+	position: absolute; 
+	right: 80px;        
+	top: 5%;          
+	transform: translateY(-50%);
+	color: black;
+	text-decoration: none;	
+    }
+		
+.Home:hover {
+		color: black;
+		}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+
+label {
+    margin-right: 10px;
+    }
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+button:hover {
+    background-color: #BA55D3;
+    }
+
+.logo{
+	height: 50px;
+    margin: 8px;
+	position: absolute; 
+	right: 160px;
+	border-radius: 25px;
+	}
+        
+.unlist {
+    list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+    }
+
+.navbar {
+	background-color: purple;
+	text-align: center; 
+	}
+
+.navbar a{
+    color: white;
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
+    }
+
+.navbar li{
+	display : inline;
+	}
+		
+.navbar a:hover{
+	color: purple;
+	background-color: pink;
+	}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+	background-color: pink;
+}
+
+.thumbnail img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.qrcaption {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: left;
+	padding: 0px;
+}
+
+.paragraph {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.center-text {
+    text-align: center;
+	right: 0;
+}
+
+.qrthumbnail {
+	position: relative;
+	}
+
+footer {
+	background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+}
